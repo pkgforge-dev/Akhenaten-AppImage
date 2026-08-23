@@ -8,13 +8,12 @@ echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
     cmake      \
-    libdecor   \
     libvpx     \
     sdl2_mixer
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
-get-debloated-pkgs --add-common --prefer-nano sdl2_image-mini
+get-debloated-pkgs --add-common --prefer-nano libdecor-mini sdl2_image-mini
 
 echo "Building Akhenaten..."
 echo "---------------------------------------------------------------"
