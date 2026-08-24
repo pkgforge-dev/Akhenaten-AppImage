@@ -8,6 +8,7 @@ export OUTPATH=./dist
 export ADD_HOOKS="self-updater.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
 export ICON=https://raw.githubusercontent.com/dalerank/Akhenaten/refs/heads/master/res/akhenaten_256.png
+export DESKTOP=https://raw.githubusercontent.com/dalerank/Akhenaten/refs/heads/master/res/akhenaten.desktop
 export STARTUPWMCLASS=akhenaten
 export DEPLOY_OPENGL=1
 export DEPLOY_VULKAN=1
