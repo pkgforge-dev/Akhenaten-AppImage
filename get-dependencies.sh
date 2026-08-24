@@ -35,8 +35,6 @@ mkdir -p ./AppDir/bin
 cd ./Akhenaten
 cp -r data mods ../AppDir/bin
 cp res/akhenaten.desktop ../AppDir
-cp res/akhenaten_256.png ../AppDir/com.github.dalerank.akhenaten.png
-cp res/akhenaten_256.png ../AppDir/.DirIcon
 mkdir -p build && cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release
 make -j$(nproc)
