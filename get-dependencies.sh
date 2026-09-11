@@ -32,9 +32,7 @@ fi
 echo "$VERSION" > ~/version
 
 mkdir -p ./AppDir/bin
-cd ./Akhenaten
-cp -r data mods ../AppDir/bin
-mkdir -p build && cd build
-cmake .. -DCMAKE_BUILD_TYPE=Release
-make -j$(nproc)
-mv -v akhenaten ../../AppDir/bin
+cp -r ./Akhenaten/data ./Akhenaten/mods ./AppDir/bin
+cmake -S ./Akhenaten -B build -DCMAKE_BUILD_TYPE=Release
+cmake --build build -j$(nproc)
+mv -v ./build/akhenaten .AppDir/bin
